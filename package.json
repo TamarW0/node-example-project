@@ -1,0 +1,22 @@
+{
+  "name": "vulnerable-node-test-project",
+  "version": "1.0.0",
+  "description": "Test project with intentional vulnerabilities for CVE reachability analysis",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start-vuln": "node server.js --__proto__.polluted=true"
+  },
+  "keywords": ["vulnerable", "test", "cve", "security"],
+  "author": "Test",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "lodash": "4.17.19",
+    "yargs": "15.4.1",
+    "express-fileupload": "1.1.7",
+    "handlebars": "4.7.6",
+    "axios": "0.21.0"
+  }
+}
+
