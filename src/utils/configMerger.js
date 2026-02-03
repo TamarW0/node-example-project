@@ -17,7 +17,7 @@ const _ = require('lodash');
 function mergeUserConfig(userConfig, defaultConfig = {}) {
   // VULNERABLE: _.defaultsDeep is susceptible to prototype pollution
   // An attacker can pass {"__proto__": {"polluted": "value"}} to pollute Object.prototype
-  const merged = _.defaultsDeep({}, userConfig, defaultConfig);
+  // const merged = _.defaultsDeep({}, userConfig, defaultConfig);
   return merged;
 }
 
