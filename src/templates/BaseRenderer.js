@@ -5,7 +5,7 @@
  * user-provided template strings without sanitization
  */
 
-const Handlebars = require('handlebars');
+// const Handlebars = require('handlebars');
 
 class BaseRenderer {
   constructor() {
