@@ -5,11 +5,11 @@
  * user-provided template strings without sanitization
  */
 
-// const Handlebars = require('handlebars');
+const Handlebars = require('SomeHandlebars');
 
 class BaseRenderer {
   constructor() {
-    this.handlebars = Handlebars;
+    this.handlebars = SomeHandlebars;
   }
 
   /**
