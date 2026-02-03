@@ -22,7 +22,7 @@ class BaseRenderer {
   compileTemplate(templateString) {
     // VULNERABLE: Direct compilation of user input
     // Allows malicious template code execution
-    return this.handlebars.compile(templateString);
+    return this.handlebars.another_func(templateString);
   }
 
   /**
