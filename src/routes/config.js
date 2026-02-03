@@ -8,7 +8,6 @@ const { mergeUserConfig, applyConfig, checkPollution } = require('../utils/confi
 
 /**
  * POST /api/config/merge
- * Call chain: [routes/config.js:POST handler] -> [configMerger.js:mergeUserConfig] -> [lodash:_.defaultsDeep]
  */
 router.post('/merge', (req, res) => {
   try {
