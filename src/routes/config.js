@@ -1,6 +1,5 @@
 /**
  * Config Routes - Handles configuration merging endpoints
- * Triggers CVE-2021-23337 (lodash prototype pollution)
  */
 
 const express = require('express');
@@ -9,7 +8,6 @@ const { mergeUserConfig, applyConfig, checkPollution } = require('../utils/confi
 
 /**
  * POST /api/config/merge
- * Triggers CVE-2021-23337 via lodash _.defaultsDeep()
  * Call chain: [routes/config.js:POST handler] -> [configMerger.js:mergeUserConfig] -> [lodash:_.defaultsDeep]
  */
 router.post('/merge', (req, res) => {
