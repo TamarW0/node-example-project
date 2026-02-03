@@ -11,7 +11,7 @@
  */
 
 const express = require('express');
-const fileUpload = require('express-fileupload');
+// const fileUpload = require('express-fileupload');
 const yargs = require('yargs');
 
 // CVE-2021-44906: Parse command-line arguments using yargs (which uses vulnerable minimist)
